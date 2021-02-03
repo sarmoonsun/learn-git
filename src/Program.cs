@@ -10,7 +10,8 @@ namespace src
             Console.WriteLine("Hello World!");
             Console.WriteLine("please enter your name");
             name = Console.ReadLine();
-            if (name == "Iman" )
+            name = name.ToLower();
+            if (name == "iman" )
             {
                 Console.WriteLine("your name is correct");
                
