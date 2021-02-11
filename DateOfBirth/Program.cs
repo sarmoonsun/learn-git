@@ -50,13 +50,13 @@ namespace DateOfBirth
 					months += 12;
 				}
 				int years = (nowdate.Year - myyear);
+                 var datetobirth =  new DateTime((nowdate.Year +1) ,mydate.Month , mydate.Day  );
+                 var daytobirth = datetobirth - DateTime.Now ;
+
 				
-             Console.WriteLine($"your age is :{years} years and {months} monthes and {days} days");
+            Console.WriteLine($"your age is :{years} years and {months} monthes and {days} days");
+            Console.WriteLine($"{daytobirth} dayes to your birthday");
             Console.WriteLine("Please enter anykey for continuse......");
-            
-
-
-    
             Console.ReadKey();
 
         }
